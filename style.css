@@ -1,0 +1,69 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#D5E1EF;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 497px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc((320px - 288px)/2);
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.image{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 288px;
+    height: 288px;
+    background: url("./images/image-qr-code.png") center  no-repeat;
+    background-size: cover;
+    border-radius: calc(20px - ((320px - 288px)/2)); /* This border raduis is base on calculation on image raduis plus the distance between card and image equal card raduis*/
+}
+
+.title{
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 20px;
+    color: #1F314F;
+}
+
+
+.content{
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #7D889E;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
